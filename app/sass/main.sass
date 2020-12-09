@@ -19,11 +19,14 @@ p
     box-sizing: border-box
 
 body
-    font-family: 'Rubik', sans-serif
-    font-size: 12px
-    letter-spacing: 3.7px
+    font-family: 'rubik', sans-serif
+    font-size: 15px
+    letter-spacing: 0.5px
     // text-transform: uppercase
     color: #fff
+
+ul
+    padding: 0
 
 .container
     width: 100%
@@ -40,23 +43,24 @@ body
     background-color: #0d3863
 
 .inner
-    width: 1420px
-    height: 810px
-    border: 10px solid #0f1820 
-    border-radius: 35px
+    width: 1265px
+    height: 715px
+    border: 20px solid #0f1820 
+    border-radius: 45px
     // background-color: #000
     box-shadow: 0 30px 80px #1d6cbb
     // background-image: url(../img/sun.jpg)
     background-image: url(../images/backgraund.jpg)
     background-repeat: no-repeat
-    background-size: 150%
-    background-position:  50% 45%
+    background-size: 115%
+    background-position:  52% 30%
     position: relative
     display: flex
+    flex-direction: column
 
 .header
     width: 100%
-    height: 100px
+    height: 150px
     padding: 0 40px
     display: flex
     align-items: center
@@ -66,19 +70,117 @@ body
         display: flex    
         &-logo
             img
-                width: 100px
+                width: 145px
         &-serch
-            width: 100px
+            width: 117px
             height: 30px
-            margin-left: 100px
+            margin-left: 60px
             border-bottom: 1px solid #fff
-            font-size: 16px
-            padding-top: 3px
+            font-size: 20px
+            // padding-top: 3px
 
     &-right
         display: flex
-        font-size: 20px
+        font-size: 35px
         &-msg
-            margin-right: 60px
+            margin-right: 67px
             // font-size: 20px
         &-menu
+.section
+    flex-grow: 3
+    display: flex
+    &-left
+        width: 100px
+        // position: relative
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        &-txt
+            display: flex
+            justify-content: center
+            // position: absolute
+            // bottom: 80px
+            p
+                writing-mode: tb-rl
+                transform: rotate(180deg)
+
+        &-img
+            height: 65px
+            text-align: center
+            // margin: 80px
+    &-maine
+        width: 464px
+        padding: 25px 0 30px 38px
+        .h1
+            font-family: helvetica
+            font-size: 56px
+            letter-spacing: 1.7px
+            word-spacing: -5px
+            line-height: 70px
+        .data
+            margin-top: 10px
+            // margin-left: -5px
+            font-size: 20px
+            .space
+                margin-left: 20px
+        .navigation
+            margin-top: 24px
+            display: flex
+            .navbox
+                width: 47px
+                height: 47px
+                background-color: #fff
+                border-radius: 12px
+                position: relative
+                &::before
+                    content: "\e902"
+                    font-family: icomoon
+                    font-size: 24px
+                    color: #111
+                    position: absolute
+                    top: 5px
+                    left: 13px
+            &-right.navbox
+                margin-left: 30px
+                background-color: #F6EF03
+                &::before
+                    content: "\e901"                    
+                    left: 17px
+    &-txt
+        flex-grow: 3
+        // margin-top: 10px
+        position: relative
+        p
+            padding-right: 20px
+            position: absolute
+            bottom: 43px
+            font-size: 20px
+            line-height: 28px
+            letter-spacing: 1px
+            word-spacing: 1px
+    &-right
+        width: 200px
+        text-align: center
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        p
+            font-family: helvetica
+            font-size: 100px
+            line-height: 130px
+            color: rgba(#fff, 0.3)
+        .circles
+            padding-left: 4px
+            padding-bottom: 25px
+            display: flex
+            justify-content: space-around
+            li
+                font-size: 17px
+                display: inline-block
+                margin-right: 13px
+                &:last-child
+                    margin-right: 0
+
+
+
+                    

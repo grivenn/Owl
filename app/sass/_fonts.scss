@@ -10,6 +10,17 @@
 }
 
 @font-face {
+  font-family: 'rain';
+  src:  url('../fonts/Rain Lily Demo.otf');
+  src:  url('../fonts/Rain Lily Demo.otf') format('embedded-opentype'),
+    url('../fonts/Rain Lily Demo.ttf') format('truetype'),
+    url('../fonts/Rain Lily Demo.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
   font-family: 'icomoon';
   src:  url('../fonts/icomoon.eot?bbid7m');
   src:  url('../fonts/icomoon.eot?bbid7m#iefix') format('embedded-opentype'),
@@ -36,13 +47,31 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-menu:before {
+.icon-circle-thin:before {
+  content: "\e906";
+}
+.icon-circle1:before {
+  content: "\e907";
+}
+.icon-chevron-right:before {
   content: "\e901";
+}
+.icon-chevron-left:before {
+  content: "\e902";
+}
+.icon-search:before {
+  content: "\e904";
+}
+.icon-menu:before {
+  content: "\e903";
 }
 .icon-message-square:before {
   content: "\e900";
 }
-.icon-search:before {
+.icon-search1:before {
+  content: "\e986";
+}
+.icon-search1:before {
   content: "\e986";
 }
 .icon-radio-unchecked:before {
